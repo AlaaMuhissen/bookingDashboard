@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/login.css" />
+  
+  </head>
+  <body>
+    <section id="container">
+      <section id="leftSec">
+        <section id="logo">
+          <img id="logoPic" src="assets/img/logo.png" alt="logo pic" />
+        </section>
+        <section class="login-container">
+          <h1>Login</h1>
+          <h6>Login to access your Golobe account</h6>
+          <form id = 'loginForm'>
+            <section class="input-container">
+              <label id="label" for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </section>
+            <section class="input-container">
+              <label id="label" for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </section>
+            <section class="input-container">
+              <label>
+                <input type="checkbox" id="isAdmin" name="isAdmin" />
+                Are you an admin?
+              </label>
+            </section>
+            <button id="loginButton" type="submit">Login</button>
+          </form>
+
+          <p id="signIn">Don't have an account? <a href="#">Sign up</a></p>
+          <section id="line">
+            <p id="or">Or login with</p>
+          </section>
+
+          <section id="buttonSec">
+            <button id="facebook-login">
+              <i
+                class="fab fa-facebook"
+                style="color: #3f67ab; font-size: 24px"
+              ></i>
+            </button>
+            <button id="google-login">
+              <i
+                class="fab fa-google-plus-g"
+                style="color: #7a0501; font-size: 24px"
+              ></i>
+            </button>
+            <button id="iclude-login">
+              <i class="fab fa-apple" style="font-size: 24px"></i>
+            </button>
+          </section>
+        </section>
+      </section>
+      <section id="rightSec">
+        <img id="loginPhoto" src="/assets/img/loginImg.png" alt="logo pic" />
+      </section>
+    </section>
+    <script type="module" src="/assets/js/login.js"></script>
+  </body>
+</html>

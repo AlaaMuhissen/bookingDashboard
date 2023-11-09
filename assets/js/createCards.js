@@ -1,6 +1,7 @@
 
 
 export function createCards(isCart , arr  , index){
+    const list = document.querySelector("#list");
     const cardSec = document.createElement("section");
     const rightSec = document.createElement("section");
     const upRightSec = document.createElement("section");
@@ -19,21 +20,21 @@ export function createCards(isCart , arr  , index){
     decreaseButton.className = "decrease-button";
     decreaseButton.textContent = "-";
     decreaseButton.type = "button";
+    decreaseButton.id=index;
 
   
     const travelersInput = document.createElement("input");
     travelersInput.className = "travelers-input";
     travelersInput.type = "number";
-    travelersInput.value = 1;
     travelersInput.min = 1;
     travelersInput.max = 10;
-
+    travelersInput.value = 1;
    
     const increaseButton = document.createElement("button");
     increaseButton.className = "increase-button";
     increaseButton.textContent = "+";
     increaseButton.type = "button";
-
+    increaseButton.id=index;
     const SecondLine = document.createElement("section");
     const checkBox = document.createElement("input");
     const time = document.createElement("span");
@@ -72,8 +73,8 @@ export function createCards(isCart , arr  , index){
     duration.textContent= arr.duration;
     
     downRightSec.className = "button-sec";
-    likeButton.textContent = "Like";
     likeButton.id = "likeButton";
+    likeButton.className = "far fa-heart";
     cancelButton.textContent = "-";
     cancelButton.className = "cancelButton";
     cancelButton.id = index;
@@ -87,6 +88,8 @@ export function createCards(isCart , arr  , index){
     cardSec.style.width = "840px";
     cardSec.style.padding = "50px 10px";
     cardSec.style.display = "flex";
+    cardSec.style.justifyContent = "center";
+    cardSec.style.alignItems = "center";
     cardSec.style.backgroundColor = "rgba(255, 255, 255, 1)";
     cardSec.style.borderRadius = "12px";
     cardSec.style.marginBottom = "20px";
@@ -120,7 +123,7 @@ export function createCards(isCart , arr  , index){
     travelersControl.style.width = "200px";
     decreaseButton.style.width = "30px";
     decreaseButton.style.height = "30px";
-    decreaseButton.style.backgroundColor = "#007BFF";
+    decreaseButton.style.backgroundColor = "#FF8682";
     decreaseButton.style.color = "#fff";
     decreaseButton.style.border = "none";
     decreaseButton.style.borderRadius = "50%";
@@ -131,13 +134,13 @@ export function createCards(isCart , arr  , index){
     travelersInput.style.height = "30px";
     travelersInput.style.textAlign = "center";
     travelersInput.style.fontSize = "16px";
-    travelersInput.style.border = "1px solid #ccc";
+    travelersInput.style.border = "1px solid #FF8682";
     travelersInput.style.borderRadius = "5px";
     travelersInput.style.margin = "0 10px";
 
     increaseButton.style.width = "30px";
     increaseButton.style.height = "30px";
-    increaseButton.style.backgroundColor = "#007BFF";
+    increaseButton.style.backgroundColor = "#FF8682";
     increaseButton.style.color = "#fff";
     increaseButton.style.border = "none";
     increaseButton.style.borderRadius = "50%";
@@ -168,8 +171,8 @@ export function createCards(isCart , arr  , index){
     likeButton.style.border = "1px solid #8DD3BB";
     likeButton.style.padding = "4px 4px";
     likeButton.style.borderRadius = "4px";
-    likeButton.style.backgroundColor = "#fff";
-
+    likeButton.style.color = "#4C4850";
+   
     cancelButton.textContent = "-";
     cancelButton.className = "cancelButton";
     cancelButton.id = index;
@@ -186,13 +189,19 @@ export function createCards(isCart , arr  , index){
 
     cancelButton.style.width = "600px";
     cancelButton.style.height = "48px";
-    cancelButton.style.backgroundColor = "red";
+    cancelButton.style.backgroundColor = "#FF8682";
     cancelButton.style.color= "white";
     cancelButton.style.fontSize = "40px";
     cancelButton.style.borderRadius = "4px";
     cancelButton.style.fontWeight = "600";
-    cancelButton.style.border = "1px solid red";
-    //========================================================
+    cancelButton.style.border = "1px solid #FF8682";
+    list.style.display = "flex";
+    list.style.flexDirection = "column";
+    list.style.position= "relative";
+    list.style.justifyContent = "center";
+    list.style.alignItems = "center";
+    list.style.width = "1440px";
+    //=======================================================
  
    
     SecondLine.appendChild(checkBox);

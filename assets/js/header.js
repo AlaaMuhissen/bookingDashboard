@@ -1,7 +1,11 @@
+import { getUser } from "./getterAndSetter.js";
+
+const user = getUser();
 
 function createHeader(){
+   
     const header = document.createElement("section");
- 
+
     header.id = "header";
     const rightSec = document.createElement("section");
     rightSec.id = "rightSec";
@@ -54,12 +58,11 @@ function createHeader(){
     linkFourthItem.href = "cart.html";
     linkFourthItem.style.textDecoration = "none";
     linkFourthItem.style.color = "#112211";
+    linkFourthItem.id = "linkFourthItem";
     const forthItem = document.createElement("section");
     forthItem.id = "forthItem";
     forthItem.style.width="124px";
     forthItem.style.height = "24px";
-   
-   
 
     const cartIcon = document.createElement("i");
     cartIcon.className = "fas fa-shopping-cart";
@@ -71,7 +74,7 @@ function createHeader(){
     cartSpan.style.fontSize = "14px";
     cartSpan.style.fontWeight = "500";
 
-        // Create a span element for displaying the cart count
+ 
     const cartCountSpan = document.createElement("span");
     cartCountSpan.id = "cartCount";
     cartCountSpan.style.backgroundColor = "red";
@@ -81,33 +84,36 @@ function createHeader(){
     cartCountSpan.style.fontSize = "12px";
     cartCountSpan.style.position = "absolute";
     cartCountSpan.style.transform = "translate(50%, -50%)";
-    cartCountSpan.style.display = "none"; // Initially, hide it
+    cartCountSpan.style.display = "none"; 
 
-    // Add the cart count span to the cartDiv
-   
+    const linkSecondItem = document.createElement("a");
+    linkSecondItem.href = "myFlights.html";
+    linkSecondItem.style.textDecoration = "none";
+    linkSecondItem.style.color = "#112211";
+    linkSecondItem.id = "linkSecondItem";
 
     const secondItem = document.createElement("section");
     secondItem.id = "secondItem";
-    secondItem.style.width="124px";
+    secondItem.style.width="130px";
     secondItem.style.height = "24px";
     secondItem.style.borderRight = "5px solid #112211";
     secondItem.style.marginRight = "32px";
 
     const favIcon = document.createElement("i");
-    favIcon.className = "fa fa-heart";
+    favIcon.className = "fas fa-ticket-alt";
     favIcon.style.fontSize= "24px";
-    favIcon.style.marginRight = "4px";
+    favIcon.style.marginRight = "7px";
 
     const favoriteSpan = document.createElement("span");
-    favoriteSpan.textContent = "Favorites";
+    favoriteSpan.textContent = "My Tickets";
     favoriteSpan.style.fontSize = "14px";
     favoriteSpan.style.fontWeight = "500";
-    
-   
+
+
     const thirdItem = document.createElement("section");
     thirdItem.id = "thirdItem";
     const profileImg = document.createElement("img");
-    profileImg.src = "https://tse2.mm.bing.net/th?id=OIP.NqY3rNMnx2NXYo3KJfg43gHaHa&pid=Api&P=0&h=180";
+    profileImg.src = user.profileImg;
     profileImg.style.width = "45px";
     profileImg.style.height = "45px";
     profileImg.style.borderRadius = "25px";
@@ -115,7 +121,7 @@ function createHeader(){
 
 
     const userName = document.createElement("span");
-    userName.textContent= "John D.";
+    userName.textContent= user.name;
     userName.style.fontSize = "14px";
     userName.style.fontWeight = "550";
 
@@ -124,6 +130,7 @@ function createHeader(){
 
     linkFirstItem.appendChild(flightIcon);
     linkFirstItem.appendChild(findFlightSpan);
+
     linkFourthItem.appendChild(cartCountSpan);
     linkFourthItem.appendChild(cartIcon);
     linkFourthItem.appendChild(cartSpan);
@@ -131,11 +138,11 @@ function createHeader(){
     firstItem.appendChild(linkFirstItem);
     forthItem.appendChild(linkFourthItem);
    
- 
+    linkSecondItem.appendChild(favIcon);
+    linkSecondItem.appendChild(favoriteSpan);
 
-    secondItem.appendChild(favIcon);
-    secondItem.appendChild(favoriteSpan);
-
+    secondItem.appendChild(linkSecondItem);
+  
     thirdItem.appendChild(profileImg);
     thirdItem.appendChild(userName);
 
@@ -147,8 +154,9 @@ function createHeader(){
     header.appendChild(rightSec);
     header.appendChild(middleSec);
     header.appendChild(leftSec);
+    
     document.querySelector("#mainHeader").appendChild(header);
-
 }
-createHeader();
 
+
+createHeader();

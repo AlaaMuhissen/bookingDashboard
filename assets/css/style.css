@@ -1,55 +1,43 @@
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+   
+   
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    width: 1440px;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
 
-form {
+#container{
+    padding: 500px 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 1440px;
+    background-color: #f0f0f0;
+}
+#logo{
+  height: 400px;
+  width: 700px;
+  margin-bottom: 200px;
 }
 
-label {
-    font-weight: bold;
-    margin-right: 5px;
-}
-
-input[type="email"],
-input[type="password"],
-input[type="text"] {
+#signIn{
+    background-color: #8DD3BB;
+    color: #112211;
     padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-button {
-    background: #007BFF;
-    color: #fff;
     border: none;
-    border-radius: 3px;
-    padding: 10px;
+    border-radius: 15px;
     cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: #0056b3;
+    font-size: 36px;
+    margin-bottom: 16px;
+    width: 300px;
+    height: 150px;
+    font-weight: 600;
+  
 }

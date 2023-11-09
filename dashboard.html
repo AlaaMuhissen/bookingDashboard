@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking System</title>
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 
@@ -10,15 +12,26 @@
 </head>
 <body>
     <header id="mainHeader"></header>
-   
-    <section id="list">
-      
+    <section id = "background">
+        <img src="assets/img/background.png" alt="background">
+        <div id = "emptyBox"> 
+            <h1 id="question">Where are you flying?</h1> 
+             <section id = "searchBar"></section>
+             <section id="buttonSec">
+             <button id="showAll"><i class="fas fa-ticket-alt" id="ticketButton"></i> Show me all the tickets</button>
+             <button id="addButton" style="display: none;"><i class="fas fa-plus-circle" id="addIcon"></i>  Add Flight</button>
+            </section>
+            </div>
+            
     </section>
+ 
+    <section id="list"> </section>
     
-    <script src="../assets/js/header.js"></script>
-    <script type="module"
-     src ="../assets/js/dashBoard.js"></script>
-
+    <script  type="module" src="/assets/js/header.js"></script>
+    <script  type="module" src="/assets/js/login.js"></script>
+    <script type="module" src ="/assets/js/dashBoard.js"></script>
+   
    
 </body>
 </html>
+

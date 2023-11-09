@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/addFlight.css">
+    <title>Add flight</title>
+</head>
+<body>
+    <header id="mainHeader"></header>
+    <section id="container">
+  
+  
+    <form id="addFlightForm">
+        <h1>Add flight</h1>
+        <section class="input-container">
+        <label for="text">Airline</label>
+        <input type="text" id="airline" required>
+    </section>
+        <section class="input-container">
+        <label for="url">Link airline logo</label>
+        <input type="url" id="airlineLogo" required>
+    </section>
+        <section class="input-container">
+        <label for="text">From</label>
+        <input type="text" id="from" required>
+    </section>
+        <section class="input-container">
+        <label for="text">To</label>
+        <input type="text" id="to" required>
+    </section>
+        <section class="input-container">
+        <label for="date">Departure Time</label>
+        <input type="datetime" id="departureTime" required>
+    </section>
+        <section class="input-container">
+        <label for="price">Price</label>
+        <input type="number" id="price">
+    </section>
+        <section class="input-container">
+        <label for="rating">Rating</label>
+        <input type="number" id="rating">
+    </section>    
+        <section class="input-container">
+        <label for="reviewsNum">Reviews number</label>
+        <input type="number" id="reviewsNum">
+        </section>    
+        <button id="addFlightButton" type="submit">Add Flight</button>
+    </form>
+</section>
+    <script type="module" src="assets/js/header.js"></script>
+    <script type="module" src="assets/js/addFlight.js"></script>
+    
+</body>
+</html>

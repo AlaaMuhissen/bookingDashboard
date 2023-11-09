@@ -5,11 +5,10 @@ body {
     background-color: #f0f0f0;
 }
 
-.cart-section {
-    background-color: #fff;
+#list {
+  
     padding: 20px;
     margin: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
@@ -18,7 +17,7 @@ body {
 }
 
 .book-button {
-    background-color: #007BFF;
+    background-color: #8DD3BB ;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -27,7 +26,7 @@ body {
 }
 
 .book-button:hover {
-    background-color: #0056b3;
+    background-color: #8DD3BB ;
 }
 
 .popup {
@@ -38,6 +37,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -47,6 +47,7 @@ body {
     padding: 20px;
     border-radius: 5px;
     position: relative;
+    text-align: center; 
 }
 
 .close {
@@ -57,7 +58,7 @@ body {
 }
 
 .confirm-button {
-    background-color: #007BFF;
+    background-color: #8DD3BB ;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -66,5 +67,19 @@ body {
 }
 
 .confirm-button:hover {
-    background-color: #0056b3;
+    background-color: #8DD3BB ;
+}
+
+#searchSec{
+    height: 200px;
+    padding: 32px 24px;
+    background-color: #fff;
+    border-radius: 16px;
+}
+#emptySec{
+    margin-top: 20px;
+  width: 1440px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }

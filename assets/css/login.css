@@ -1,0 +1,146 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1440px;
+    height: 1024px;
+}
+#container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin: 104px 104px;
+  }
+  
+  #logo , #logoPic{
+    width: 110.35px ;
+    height: 36px;
+  }
+  #logo{
+    margin-bottom: 48px;
+  }
+  .login-container {
+    background-color: #fff;
+    width: 512px;
+    height: 593px;
+  }
+  #leftSec{
+    margin-right: 104px;
+  }
+  h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  h6{
+    font-size: 16px;
+    margin-bottom: 48px;
+    color: #112211;
+  }
+  
+  #loginForm {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+
+  #loginButton{
+    background-color: #8DD3BB;
+    color: #112211;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  
+
+  a {
+    text-decoration: none;
+    color: #FF8682;
+  }
+  
+
+
+#loginPhoto{
+    width: 616px;
+    height: 816px;
+    border-radius: 30px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+input[type="email"],
+input[type="password"]{
+  height: 56px;
+  padding: 10px;
+  border: 1px solid #79747E;
+  border-radius: 4px;
+  position: relative;
+  width: 512px;
+  line-height: 6ex;
+}
+
+#label {
+    position: absolute;
+    top: -0.9ex;
+    z-index: 1;
+    left: 2em;
+    color: #1C1B1F;
+    padding: 0 5px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+input:focus + label, input:valid + label {
+  top: -10px;
+  font-size: 12px;
+  color: #333;
+}
+
+#signIn{
+    font-size: 14px;
+    margin-left: 12em;
+}
+
+#line{
+    width: 512px;
+    height: 40px;
+    border-bottom: 0.1px solid #112211;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+#or{
+    position: absolute;
+    z-index: 1;
+    top: 2.5ex; 
+    font-size: 14px;
+    left: 15em;
+    background-color: #fff;
+    padding: 12px;
+}
+#buttonSec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#iclude-login, #google-login , #facebook-login{
+    width: 160px;
+    height: 56px;
+    border: 1px solid #8DD3BB ;
+    padding: 16px 24px;
+    border-radius: 4px;
+    background-color: #fff;
+
+}

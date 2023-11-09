@@ -11,6 +11,7 @@ export const flights = [
         price: 250,
         availableSeats: 150,
         rating : 4.2,
+        travelerNum: 1,
         reviewsNum : 54,
         duration: "2h 30m",
         aircraftType: "Boeing 737",
@@ -21,11 +22,12 @@ export const flights = [
             business: { price: 450, availableSeats: 40 },
             firstClass: { price: 800, availableSeats: 10 }
         }
+        
     },
     {
         id: 2,
         airline: "Another Air",
-        logoPic: "https://pluspng.com/img-png/emirates-airlines-logo-png-dubai-flight-emirates-airline-etihad-airways-fly-emirates-logo-910x512.png",
+        logoPic: "https://pluspng.com/img-png/emirates-airlines-logo-png-emirates-logo-the-most-famous-brands-and-company-logos-in-the-world-3840x2160.png",
         flightNumber: "AA456",
         from: "Chicago",
         to: "Miami",
@@ -33,7 +35,7 @@ export const flights = [
         arrivalTime: "2023-12-01 12:00 PM",
         price: 180,
         availableSeats: 120,
-
+        travelerNum: 1,
         rating : 4.2,
         reviewsNum : 20,
         duration: "2h 30m",
@@ -49,7 +51,7 @@ export const flights = [
     {
         id: 3,
         airline: "Fly Express",
-        logoPic: "https://pluspng.com/img-png/emirates-airlines-logo-png-dubai-flight-emirates-airline-etihad-airways-fly-emirates-logo-910x512.png",
+        logoPic: "https://pluspng.com/img-png/emirates-airlines-logo-png-emirates-logo-the-most-famous-brands-and-company-logos-in-the-world-3840x2160.png",
         flightNumber: "FE789",
         from: "Los Angeles",
         to: "New York",
@@ -57,6 +59,7 @@ export const flights = [
         arrivalTime: "2023-12-02 10:00 AM",
         price: 220,
         availableSeats: 80,
+        travelerNum: 1,
         rating : 4.2,
         reviewsNum : 39,
         duration: "2h 30m",
@@ -71,7 +74,7 @@ export const flights = [
     {
         id: 4,
         airline: "WingStar",
-        logoPic: "https://pluspng.com/img-png/emirates-airlines-logo-png-dubai-flight-emirates-airline-etihad-airways-fly-emirates-logo-910x512.png",
+        logoPic: "https://pluspng.com/img-png/emirates-airlines-logo-png-emirates-logo-the-most-famous-brands-and-company-logos-in-the-world-3840x2160.png",
         flightNumber: "WS345",
         from: "Miami",
         to: "Chicago",
@@ -79,6 +82,7 @@ export const flights = [
         arrivalTime: "2023-12-02 01:00 PM",
         price: 190,
         availableSeats: 100,
+        travelerNum: 1,
         rating : 4.2,
         reviewsNum : 138,
         duration: "2h 30m",
@@ -93,7 +97,7 @@ export const flights = [
     {
         id: 5,
         airline: "SkyJet",
-        logoPic: "https://pluspng.com/img-png/emirates-airlines-logo-png-dubai-flight-emirates-airline-etihad-airways-fly-emirates-logo-910x512.png",
+        logoPic: "https://pluspng.com/img-png/emirates-airlines-logo-png-emirates-logo-the-most-famous-brands-and-company-logos-in-the-world-3840x2160.png",
         flightNumber: "SJ567",
         from: "San Francisco",
         to: "Seattle",
@@ -101,6 +105,7 @@ export const flights = [
         arrivalTime: "2023-12-03 10:30 AM",
         price: 150,
         availableSeats: 70,
+        travelerNum: 1,
         rating : 4.2,
         reviewsNum : 10,
         duration: "2h",

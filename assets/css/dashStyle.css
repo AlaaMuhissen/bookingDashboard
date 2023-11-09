@@ -15,7 +15,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 21px 104px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 
@@ -118,3 +118,56 @@ body{
     border-radius: 4px;
     font-weight: 600;
 }
+
+#background{
+    position: relative;
+    width: 1440px;
+    height: 537px;
+    margin-bottom: 30ex;
+}
+img{
+    width: 1440px;
+    height: 537px;
+    position: relative;
+}
+
+#emptyBox{
+    height: 280px;
+    padding: 32px 24px;
+    background-color: #fff;
+    border-radius: 16px;
+    position: absolute;
+    top: 55ex;
+    left: 5em;
+}
+
+#question{
+    color: #112211;
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-left: 32px;
+}
+
+#showAll , #addButton{
+    position: relative;
+    width: 230px;
+    height: 48px;
+    border: 1px solid #fff;
+    padding: 4px 4px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #8DD3BB;
+    margin-left: 24px;
+  
+  }
+
+  #buttonSec{
+display: flex;
+flex-direction: row;
+  }
+
+  #addIcon, #ticketButton{
+    font-size: 18px;
+    color: #112211;
+    margin-right: 5px;
+  }

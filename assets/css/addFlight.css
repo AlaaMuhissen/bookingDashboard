@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1440px;
+    height: 1024px;
+   background-color: rgba(245, 245, 245, 1); 
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#header{
+    width: 1440px;
+    height: 87px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 21px 104px;
+    /* margin-bottom: 50px; */
+}
+
+
+#firstItem , #thirdItem , #secondItem{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#container {
+    margin-top:20ex ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 24px;
+}
+  .input-container {
+    position: relative;
+    margin-bottom: 24px;
+  }
+  h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #112211;
+  }
+  input{
+  height: 56px;
+  padding: 10px;
+  border: 1px solid #79747E;
+  border-radius: 4px;
+  position: relative;
+  width: 512px;
+  line-height: 6ex;
+}
+
+label {
+    position: absolute;
+    top: -0.9ex;
+    z-index: 1;
+    left: 2em;
+    color: #1C1B1F;
+    padding: 0 5px;
+    font-size: 14px;
+    background-color: #fff;
+    
+}
+
+input:focus + label, input:valid + label {
+  top: -10px;
+  font-size: 12px;
+  color: #333;
+}
+#addFlightButton{
+    background-color: #8DD3BB;
+    color: #112211;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 600;
+
+}
